@@ -1,0 +1,361 @@
+12 Jun 2019 10:57:22,590 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - Kafka version : 2.0.0
+12 Jun 2019 10:57:22,590 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - Kafka commitId : 3402a8361b734732
+12 Jun 2019 10:57:22,714 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - Cluster ID: ms17cO9STR2r4eqy9TWjmQ
+12 Jun 2019 10:57:22,715 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-31b4f47f-3e98-4c57-aaa0-29ece2af58c8-1613028860-driver-0] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12 Jun 2019 10:57:22,726 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-31b4f47f-3e98-4c57-aaa0-29ece2af58c8-1613028860-driver-0] Revoking previously assigned partitions []
+12 Jun 2019 10:57:22,726 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-31b4f47f-3e98-4c57-aaa0-29ece2af58c8-1613028860-driver-0] (Re-)joining group
+12 Jun 2019 10:57:22,756 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-31b4f47f-3e98-4c57-aaa0-29ece2af58c8-1613028860-driver-0] Successfully joined group with generation 1
+12 Jun 2019 10:57:22,759 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-31b4f47f-3e98-4c57-aaa0-29ece2af58c8-1613028860-driver-0] Setting newly assigned partitions [test2-0]
+12 Jun 2019 10:57:22,772 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-31b4f47f-3e98-4c57-aaa0-29ece2af58c8-1613028860-driver-0] Resetting offset for partition test2-0 to offset 0.
+12 Jun 2019 10:57:22,775 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-31b4f47f-3e98-4c57-aaa0-29ece2af58c8-1613028860-driver-0] Resetting offset for partition test2-0 to offset 0.
+12 Jun 2019 10:57:22,807 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - Streaming query made progress: {
+  "id" : "6c3f8e4d-a345-4f45-8d97-aba70ea539d5",
+  "runId" : "624e4726-efdc-446d-afcf-7ede69dd6391",
+  "name" : null,
+  "timestamp" : "2019-06-12T05:27:22.401Z",
+  "batchId" : 1,
+  "numInputRows" : 0,
+  "processedRowsPerSecond" : 0.0,
+  "durationMs" : {
+    "getEndOffset" : 0,
+    "setOffsetRange" : 337,
+    "triggerExecution" : 381
+  },
+  "stateOperators" : [ ],
+  "sources" : [ {
+    "description" : "KafkaV2[Subscribe[test2]]",
+    "startOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "endOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "numInputRows" : 0,
+    "processedRowsPerSecond" : 0.0
+  } ],
+  "sink" : {
+    "description" : "org.elasticsearch.spark.sql.streaming.EsSparkSqlStreamingSink@1601ae5c"
+  }
+}
+12 Jun 2019 10:57:30,005 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 624e4726-efdc-446d-afcf-7ede69dd6391] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-31b4f47f-3e98-4c57-aaa0-29ece2af58c8-1613028860-driver-0] Resetting offset for partition test2-0 to offset 0.
+12 Jun 2019 10:57:32,646 Thread-2 - Invoking stop() from shutdown hook
+12 Jun 2019 10:57:32,657 Thread-2 - Stopped Spark@49f5c307{HTTP/1.1,[http/1.1]}{0.0.0.0:4042}
+12 Jun 2019 10:57:32,660 Thread-2 - Stopped Spark web UI at http://192.168.13.172:4042
+12 Jun 2019 10:57:32,670 dispatcher-event-loop-0 - MapOutputTrackerMasterEndpoint stopped!
+12 Jun 2019 10:57:32,677 Thread-2 - MemoryStore cleared
+12 Jun 2019 10:57:32,678 Thread-2 - BlockManager stopped
+12 Jun 2019 10:57:32,683 Thread-2 - BlockManagerMaster stopped
+12 Jun 2019 10:57:32,687 dispatcher-event-loop-0 - OutputCommitCoordinator stopped!
+12 Jun 2019 10:57:32,690 Thread-2 - Successfully stopped SparkContext
+12 Jun 2019 10:57:32,691 Thread-2 - Shutdown hook called
+12 Jun 2019 10:57:32,692 Thread-2 - Deleting directory /tmp/temporaryReader-9d5ac61b-28d8-46cd-948d-2244e3cee615
+12 Jun 2019 10:57:32,693 Thread-2 - Deleting directory /tmp/spark-ee0d54f7-dbad-4ff4-abd2-aeab9e5b50f5
+12 Jun 2019 10:57:36,048 main - Your hostname, ISILLT0341 resolves to a loopback address: 127.0.1.1; using 192.168.13.172 instead (on interface wlo1)
+12 Jun 2019 10:57:36,050 main - Set SPARK_LOCAL_IP if you need to bind to another address
+12 Jun 2019 10:57:36,167 main - Running Spark version 2.4.2
+12 Jun 2019 10:57:36,612 main - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+12 Jun 2019 10:57:36,843 main - Submitted application:  Spark Kafka basic example
+12 Jun 2019 10:57:36,958 main - Changing view acls to: indium
+12 Jun 2019 10:57:36,959 main - Changing modify acls to: indium
+12 Jun 2019 10:57:36,960 main - Changing view acls groups to: 
+12 Jun 2019 10:57:36,961 main - Changing modify acls groups to: 
+12 Jun 2019 10:57:36,963 main - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(indium); groups with view permissions: Set(); users  with modify permissions: Set(indium); groups with modify permissions: Set()
+12 Jun 2019 10:57:37,616 main - Successfully started service 'sparkDriver' on port 37847.
+12 Jun 2019 10:57:37,707 main - Registering MapOutputTracker
+12 Jun 2019 10:57:37,789 main - Registering BlockManagerMaster
+12 Jun 2019 10:57:37,793 main - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+12 Jun 2019 10:57:37,793 main - BlockManagerMasterEndpoint up
+12 Jun 2019 10:57:37,809 main - Created local directory at /tmp/blockmgr-7560e658-87b6-45af-9958-20e7f7a97371
+12 Jun 2019 10:57:37,833 main - MemoryStore started with capacity 1946.1 MB
+12 Jun 2019 10:57:37,850 main - Registering OutputCommitCoordinator
+12 Jun 2019 10:57:37,954 main - Logging initialized @3129ms
+12 Jun 2019 10:57:38,057 main - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+12 Jun 2019 10:57:38,075 main - Started @3251ms
+12 Jun 2019 10:57:38,097 main - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+12 Jun 2019 10:57:38,098 main - Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+12 Jun 2019 10:57:38,106 main - Started ServerConnector@49f5c307{HTTP/1.1,[http/1.1]}{0.0.0.0:4042}
+12 Jun 2019 10:57:38,106 main - Successfully started service 'SparkUI' on port 4042.
+12 Jun 2019 10:57:38,136 main - Started o.s.j.s.ServletContextHandler@2fd1731c{/jobs,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,137 main - Started o.s.j.s.ServletContextHandler@59aa20b3{/jobs/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,138 main - Started o.s.j.s.ServletContextHandler@363f6148{/jobs/job,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,139 main - Started o.s.j.s.ServletContextHandler@1b28f282{/jobs/job/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,140 main - Started o.s.j.s.ServletContextHandler@138fe6ec{/stages,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,141 main - Started o.s.j.s.ServletContextHandler@5e77f0f4{/stages/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,142 main - Started o.s.j.s.ServletContextHandler@19b30c92{/stages/stage,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,144 main - Started o.s.j.s.ServletContextHandler@4816c290{/stages/stage/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,145 main - Started o.s.j.s.ServletContextHandler@4940809c{/stages/pool,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,146 main - Started o.s.j.s.ServletContextHandler@16423501{/stages/pool/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,147 main - Started o.s.j.s.ServletContextHandler@4efcf8a{/storage,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,148 main - Started o.s.j.s.ServletContextHandler@7a138fc5{/storage/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,149 main - Started o.s.j.s.ServletContextHandler@379ab47b{/storage/rdd,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,150 main - Started o.s.j.s.ServletContextHandler@307765b4{/storage/rdd/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,153 main - Started o.s.j.s.ServletContextHandler@4a9e6faf{/environment,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,153 main - Started o.s.j.s.ServletContextHandler@2c95ac9e{/environment/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,154 main - Started o.s.j.s.ServletContextHandler@4e4efc1b{/executors,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,155 main - Started o.s.j.s.ServletContextHandler@459f7aa3{/executors/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,156 main - Started o.s.j.s.ServletContextHandler@7cc586a8{/executors/threadDump,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,157 main - Started o.s.j.s.ServletContextHandler@7db534f2{/executors/threadDump/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,169 main - Started o.s.j.s.ServletContextHandler@44a2b17b{/static,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,170 main - Started o.s.j.s.ServletContextHandler@1eef9aef{/,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,172 main - Started o.s.j.s.ServletContextHandler@11389053{/api,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,173 main - Started o.s.j.s.ServletContextHandler@9f46d94{/jobs/job/kill,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,174 main - Started o.s.j.s.ServletContextHandler@18cc679e{/stages/stage/kill,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,177 main - Bound SparkUI to 0.0.0.0, and started at http://192.168.13.172:4042
+12 Jun 2019 10:57:38,273 main - Starting executor ID driver on host localhost
+12 Jun 2019 10:57:38,352 main - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41557.
+12 Jun 2019 10:57:38,353 main - Server created on 192.168.13.172:41557
+12 Jun 2019 10:57:38,354 main - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+12 Jun 2019 10:57:38,382 main - Registering BlockManager BlockManagerId(driver, 192.168.13.172, 41557, None)
+12 Jun 2019 10:57:38,386 dispatcher-event-loop-0 - Registering block manager 192.168.13.172:41557 with 1946.1 MB RAM, BlockManagerId(driver, 192.168.13.172, 41557, None)
+12 Jun 2019 10:57:38,389 main - Registered BlockManager BlockManagerId(driver, 192.168.13.172, 41557, None)
+12 Jun 2019 10:57:38,390 main - Initialized BlockManager: BlockManagerId(driver, 192.168.13.172, 41557, None)
+12 Jun 2019 10:57:38,557 main - Started o.s.j.s.ServletContextHandler@3c5a54b7{/metrics/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,736 main - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/indium/IdeaProjects/KafkatoElasctic/spark-warehouse/').
+12 Jun 2019 10:57:38,737 main - Warehouse path is 'file:/home/indium/IdeaProjects/KafkatoElasctic/spark-warehouse/'.
+12 Jun 2019 10:57:38,750 main - Started o.s.j.s.ServletContextHandler@4bdcaf36{/SQL,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,751 main - Started o.s.j.s.ServletContextHandler@61d01788{/SQL/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,752 main - Started o.s.j.s.ServletContextHandler@69cac930{/SQL/execution,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,753 main - Started o.s.j.s.ServletContextHandler@19593091{/SQL/execution/json,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:38,755 main - Started o.s.j.s.ServletContextHandler@175acfb2{/static/sql,null,AVAILABLE,@Spark}
+12 Jun 2019 10:57:39,564 main - Registered StateStoreCoordinator endpoint
+12 Jun 2019 10:57:39,615 main - Elasticsearch Hadoop v6.7.2 [5267d6ddb3]
+12 Jun 2019 10:57:42,363 main - Using log path of [/tmp/test2_data/sinks/elasticsearch]
+12 Jun 2019 10:57:42,796 main - Starting [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613]. Use file:///tmp/test2_data to store the query checkpoint.
+12 Jun 2019 10:57:42,817 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Using MicroBatchReader [KafkaV2[Subscribe[test2]]] from DataSourceV2 named 'kafka' [org.apache.spark.sql.kafka010.KafkaSourceProvider@37180581]
+12 Jun 2019 10:57:42,860 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Resuming at batch 1 with committed offsets {KafkaV2[Subscribe[test2]]: {"test2":{"0":0}}} and available offsets {KafkaV2[Subscribe[test2]]: {"test2":{"0":0}}}
+12 Jun 2019 10:57:42,860 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Stream started from {KafkaV2[Subscribe[test2]]: {"test2":{"0":0}}}
+12 Jun 2019 10:57:42,944 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+
+12 Jun 2019 10:57:43,023 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Kafka version : 2.0.0
+12 Jun 2019 10:57:43,023 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Kafka commitId : 3402a8361b734732
+12 Jun 2019 10:57:43,151 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Cluster ID: ms17cO9STR2r4eqy9TWjmQ
+12 Jun 2019 10:57:43,153 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Discovered group coordinator localhost:9092 (id: 2147483647 rack: null)
+12 Jun 2019 10:57:43,164 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Revoking previously assigned partitions []
+12 Jun 2019 10:57:43,164 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] (Re-)joining group
+12 Jun 2019 10:57:43,212 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Successfully joined group with generation 1
+12 Jun 2019 10:57:43,217 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Setting newly assigned partitions [test2-0]
+12 Jun 2019 10:57:43,231 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Resetting offset for partition test2-0 to offset 0.
+12 Jun 2019 10:57:43,233 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Resetting offset for partition test2-0 to offset 0.
+12 Jun 2019 10:57:43,263 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Streaming query made progress: {
+  "id" : "6c3f8e4d-a345-4f45-8d97-aba70ea539d5",
+  "runId" : "3efba3db-a344-4ed3-acd6-139504b28613",
+  "name" : null,
+  "timestamp" : "2019-06-12T05:27:42.824Z",
+  "batchId" : 1,
+  "numInputRows" : 0,
+  "processedRowsPerSecond" : 0.0,
+  "durationMs" : {
+    "getEndOffset" : 0,
+    "setOffsetRange" : 373,
+    "triggerExecution" : 415
+  },
+  "stateOperators" : [ ],
+  "sources" : [ {
+    "description" : "KafkaV2[Subscribe[test2]]",
+    "startOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "endOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "numInputRows" : 0,
+    "processedRowsPerSecond" : 0.0
+  } ],
+  "sink" : {
+    "description" : "org.elasticsearch.spark.sql.streaming.EsSparkSqlStreamingSink@1007b7dd"
+  }
+}
+12 Jun 2019 10:57:50,007 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Resetting offset for partition test2-0 to offset 0.
+12 Jun 2019 10:58:00,006 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Resetting offset for partition test2-0 to offset 0.
+12 Jun 2019 10:58:00,008 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Streaming query made progress: {
+  "id" : "6c3f8e4d-a345-4f45-8d97-aba70ea539d5",
+  "runId" : "3efba3db-a344-4ed3-acd6-139504b28613",
+  "name" : null,
+  "timestamp" : "2019-06-12T05:28:00.001Z",
+  "batchId" : 1,
+  "numInputRows" : 0,
+  "inputRowsPerSecond" : 0.0,
+  "processedRowsPerSecond" : 0.0,
+  "durationMs" : {
+    "getEndOffset" : 1,
+    "setOffsetRange" : 5,
+    "triggerExecution" : 6
+  },
+  "stateOperators" : [ ],
+  "sources" : [ {
+    "description" : "KafkaV2[Subscribe[test2]]",
+    "startOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "endOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "numInputRows" : 0,
+    "inputRowsPerSecond" : 0.0,
+    "processedRowsPerSecond" : 0.0
+  } ],
+  "sink" : {
+    "description" : "org.elasticsearch.spark.sql.streaming.EsSparkSqlStreamingSink@1007b7dd"
+  }
+}
+12 Jun 2019 10:58:10,005 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Resetting offset for partition test2-0 to offset 0.
+12 Jun 2019 10:58:10,009 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Streaming query made progress: {
+  "id" : "6c3f8e4d-a345-4f45-8d97-aba70ea539d5",
+  "runId" : "3efba3db-a344-4ed3-acd6-139504b28613",
+  "name" : null,
+  "timestamp" : "2019-06-12T05:28:10.001Z",
+  "batchId" : 1,
+  "numInputRows" : 0,
+  "inputRowsPerSecond" : 0.0,
+  "processedRowsPerSecond" : 0.0,
+  "durationMs" : {
+    "getEndOffset" : 1,
+    "setOffsetRange" : 4,
+    "triggerExecution" : 5
+  },
+  "stateOperators" : [ ],
+  "sources" : [ {
+    "description" : "KafkaV2[Subscribe[test2]]",
+    "startOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "endOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "numInputRows" : 0,
+    "inputRowsPerSecond" : 0.0,
+    "processedRowsPerSecond" : 0.0
+  } ],
+  "sink" : {
+    "description" : "org.elasticsearch.spark.sql.streaming.EsSparkSqlStreamingSink@1007b7dd"
+  }
+}
+12 Jun 2019 10:58:20,006 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - [Consumer clientId=consumer-1, groupId=spark-kafka-source-6fa369cd-282a-4fb8-b225-4a4f8d2852f8-1613028860-driver-0] Resetting offset for partition test2-0 to offset 0.
+12 Jun 2019 10:58:20,008 stream execution thread for [id = 6c3f8e4d-a345-4f45-8d97-aba70ea539d5, runId = 3efba3db-a344-4ed3-acd6-139504b28613] - Streaming query made progress: {
+  "id" : "6c3f8e4d-a345-4f45-8d97-aba70ea539d5",
+  "runId" : "3efba3db-a344-4ed3-acd6-139504b28613",
+  "name" : null,
+  "timestamp" : "2019-06-12T05:28:20.000Z",
+  "batchId" : 1,
+  "numInputRows" : 0,
+  "inputRowsPerSecond" : 0.0,
+  "processedRowsPerSecond" : 0.0,
+  "durationMs" : {
+    "getEndOffset" : 0,
+    "setOffsetRange" : 5,
+    "triggerExecution" : 6
+  },
+  "stateOperators" : [ ],
+  "sources" : [ {
+    "description" : "KafkaV2[Subscribe[test2]]",
+    "startOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "endOffset" : {
+      "test2" : {
+        "0" : 0
+      }
+    },
+    "numInputRows" : 0,
+    "inputRowsPerSecond" : 0.0,
+    "processedRowsPerSecond" : 0.0
+  } ],
+  "sink" : {
+    "description" : "org.elasticsearch.spark.sql.streaming.EsSparkSqlStreamingSink@1007b7dd"
+  }
+}
+12 Jun 2019 10:58:24,862 Thread-2 - Invoking stop() from shutdown hook
+12 Jun 2019 10:58:24,872 Thread-2 - Stopped Spark@49f5c307{HTTP/1.1,[http/1.1]}{0.0.0.0:4042}
+12 Jun 2019 10:58:24,875 Thread-2 - Stopped Spark web UI at http://192.168.13.172:4042
+12 Jun 2019 10:58:24,887 dispatcher-event-loop-0 - MapOutputTrackerMasterEndpoint stopped!
+12 Jun 2019 10:58:24,893 Thread-2 - MemoryStore cleared
+12 Jun 2019 10:58:24,893 Thread-2 - BlockManager stopped
+12 Jun 2019 10:58:24,894 Thread-2 - BlockManagerMaster stopped
+12 Jun 2019 10:58:24,897 dispatcher-event-loop-1 - OutputCommitCoordinator stopped!
+12 Jun 2019 10:58:24,901 Thread-2 - Successfully stopped SparkContext
+12 Jun 2019 10:58:24,901 Thread-2 - Shutdown hook called
+12 Jun 2019 10:58:24,903 Thread-2 - Deleting directory /tmp/spark-f9c85738-eea1-4f12-8274-db45cc2b7a0a
+12 Jun 2019 10:58:24,905 Thread-2 - Deleting directory /tmp/temporaryReader-104ffe77-7d0d-40fa-8f6f-82ab57f5afce
